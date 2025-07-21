@@ -10,3 +10,6 @@ if (environment.production) {
 
 platformBrowserDynamic().bootstrapModule(AppModule)
   .catch(err => console.error(err));
+
+//! we should ideally not import anything from bootstrapping file
+//! this causes bootstrap to happen twice during testing
